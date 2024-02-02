@@ -6,7 +6,7 @@
 /*   By: akdovlet <akdovlet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 17:04:41 by akdovlet          #+#    #+#             */
-/*   Updated: 2024/01/13 22:42:05 by akdovlet         ###   ########.fr       */
+/*   Updated: 2024/02/02 15:38:08 by akdovlet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,8 @@ int	ak_strlen(char *str)
 
 	i = 0;
 	if (str)
-	{
 		while (str[i])
-			i++;		
-	}
+			i++;
 	return (i);
 }
 
@@ -49,13 +47,15 @@ char	*ak_strjoin(char *s1, char *s2)
 	if (!s1)
 	{
 		s1 = malloc(sizeof(char) * 1);
+		if (!s1)
+			return (NULL);
 		s1[0] = 0;
 	}
-	if (!s1 || !s2)
-		return (NULL);
+	if (!s2)
+		return (free(s1), NULL);
 	fusion = malloc(sizeof(char) * (ak_strlen(s1) + ak_strlen(s2) + 1));
 	if (!fusion)
-		return (NULL);
+		return (free(s1), NULL);
 	while (s1[++i])
 		fusion[i] = s1[i];
 	while (s2[++j])

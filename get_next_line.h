@@ -6,7 +6,7 @@
 /*   By: akdovlet <akdovlet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 14:40:25 by akdovlet          #+#    #+#             */
-/*   Updated: 2024/01/13 22:34:20 by akdovlet         ###   ########.fr       */
+/*   Updated: 2024/01/14 11:46:53 by akdovlet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <unistd.h>
 # include <fcntl.h>
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE (1 * 1024 * 1024)
+#  define BUFFER_SIZE 1024
 # endif
 
 int		ak_strchr(char *str, char c);
@@ -29,5 +29,3 @@ void	clean_static(char *buffer);
 char	*extract_line(char *tmp);
 
 #endif
-
-

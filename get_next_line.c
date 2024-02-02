@@ -6,7 +6,7 @@
 /*   By: akdovlet <akdovlet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 16:18:24 by akdovlet          #+#    #+#             */
-/*   Updated: 2024/01/13 22:44:02 by akdovlet         ###   ########.fr       */
+/*   Updated: 2024/02/02 12:49:16 by akdovlet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,12 +99,14 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
+// #include <stdio.h>
+
 // int main()
 // {
 // 	char *line;
 // 	int i = 0;
-// 	int fd = open("alternate_line_nl_with_nl", O_RDONLY);
-// 	while (1)
+// 	int fd = open("Auden.txt", O_RDONLY);
+// 	while (i < 4)
 // 	{
 // 		line = get_next_line(fd);
 // 		if (!line)

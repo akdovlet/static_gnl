@@ -6,7 +6,7 @@
 /*   By: akdovlet <akdovlet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 22:33:53 by akdovlet          #+#    #+#             */
-/*   Updated: 2024/01/13 22:35:14 by akdovlet         ###   ########.fr       */
+/*   Updated: 2024/01/14 11:34:38 by akdovlet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@
 # include <fcntl.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE (1 * 1024 * 1024)
+#  define BUFFER_SIZE 42
 # endif
 
 # ifndef FD_MAX
-#  define FD_MAX 4096
+#  define FD_MAX 512
 # endif
 
 int		ak_strchr(char *str, char c);
